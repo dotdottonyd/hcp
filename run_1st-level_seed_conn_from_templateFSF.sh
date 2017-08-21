@@ -4,6 +4,13 @@
 # file/directory variables
 ##############################################################
 
+if [ $# -lt 3 ]; then
+    echo "Usage:   run_1st-level_seed_conn_from_templateFSF.sh < subject > < mask > < image encoding direction >"
+    echo "Example: run_1st-level_seed_conn_from_templateFSF.sh ${SUBJECT_PATH}/100307 ${FULL_MASK_PATH}/b_10m.nii.gz LR or RL"
+    echo
+    exit 1
+fi
+
 # subject directory
 SUBDIR=$1
 
