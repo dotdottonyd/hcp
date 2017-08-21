@@ -85,5 +85,5 @@ $HOME/analysis/fat/model/clean_level1.sh ${FEATDIR}
 
 # set identity transforms because we don't register functional to structural in 1st level. 
 # This is necessary for "3rd" level analysis.
-echo "  running identity transforms for 1st level: python $SCRIPTDIR/identity_level1_hcp.py ${SUBDIR} ${FEATDIR} "
-python $SCRIPTDIR/identity_level1_hcp.py ${SUBDIR} ${MASKNAME} ${PHASE_ENC}
+echo "  running identity transforms for 1st level: python $HOME/analysis/hcp/identity_level1_hcp.py ${SUBDIR} ${FEATDIR} "
+python $HOME/analysis/hcp/identity_level1_hcp.py ${SUBDIR} ${MASKNAME} ${PHASE_ENC}
